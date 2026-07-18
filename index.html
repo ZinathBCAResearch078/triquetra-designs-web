@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Triquetra Designs | Precision Structural Architecture</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+bronze: {
+50: '#fdfaf6',
+100: '#f7f0e6',
+200: '#ecdcc5',
+300: '#dabf9b',
+400: '#c39d6d',
+500: '#b1834f',
+600: '#a67c52',
+700: '#8a6444',
+800: '#71533b',
+900: '#5d4633',
+},
+zinc: {
+950: '#09090b',
+}
+},
+fontFamily: {
+sans: ['Inter', 'sans-serif'],
+display: ['Montserrat', 'sans-serif'],
+},
+letterSpacing: {
+'ultra-wide': '0.25em',
+'blueprint': '0.5em',
+}
+}
+}
+}
+</script>
+<style>
+.glass-nav {
+background: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.blueprint-grid {
+background-size: 40px 40px;
+background-image: radial-gradient(circle, #000000 1px, rgba(0,0,0,0) 1px);
+opacity: 0.03;
+}
+.hero-gradient {
+background: linear-gradient(to right, rgba(9, 9, 11, 0.9) 0%, rgba(9, 9, 11, 0.4) 100%);
+}
+.reveal-up {
+animation: revealUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes revealUp {
+from { opacity: 0; transform: translateY(40px); }
+to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body class="bg-white text-zinc-950 font-sans antialiased overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex justify-between items-center h-24">
+            <!-- Logo -->
+            <div class="flex flex-col group cursor-pointer">
+                <span class="font-display font-bold text-2xl tracking-ultra-wide transition-all duration-500 group-hover:text-bronze-600">TRIQUETRA</span>
+                <span class="font-display text-[10px] tracking-blueprint text-zinc-500 -mt-1 ml-0.5">DESIGNS</span>
+            </div>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-12">
+                <a href="#pillars" class="text-xs uppercase tracking-widest font-medium hover:text-bronze-600 transition-colors">The Pillars</a>
+                <a href="#portfolio" class="text-xs uppercase tracking-widest font-medium hover:text-bronze-600 transition-colors">Portfolio</a>
+                <a href="#process" class="text-xs uppercase tracking-widest font-medium hover:text-bronze-600 transition-colors">Process</a>
+                <a href="https://wa.me/#" class="bg-zinc-950 text-white px-8 py-3 text-xs uppercase tracking-widest font-bold hover:bg-bronze-600 transition-all duration-300">Consult an Architect</a>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-zinc-950">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1600607687940-4e524cb35797?auto=format&fit=crop&q=80&w=2070" 
+             class="w-full h-full object-cover opacity-60" 
+             alt="Luxury Architecture Elevation">
+        <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
+        <div class="max-w-3xl border-l-2 border-bronze-600/30 pl-8 md:pl-16 py-12 reveal-up">
+            <span class="text-bronze-400 font-display tracking-[0.4em] text-xs uppercase mb-6 block">Structural Engineering & Design</span>
+            <h1 class="text-5xl md:text-8xl font-display font-light text-white leading-tight mb-8">
+                Precision in <br><span class="font-semibold italic">Spatial Structure.</span>
+            </h1>
+            <p class="text-zinc-300 text-lg md:text-xl font-light max-w-xl leading-relaxed mb-12">
+                A contemporary, technology-forward, and strategy-driven design practice redefining high-ticket living through geometric excellence.
+            </p>
+            <div class="flex flex-wrap gap-6">
+                <a href="#portfolio" class="px-10 py-5 bg-white text-zinc-950 text-xs uppercase tracking-widest font-bold hover:bg-bronze-600 hover:text-white transition-all duration-500">View Masterpieces</a>
+                <a href="#pillars" class="px-10 py-5 border border-white/20 text-white text-xs uppercase tracking-widest font-bold hover:bg-white hover:text-zinc-950 transition-all duration-500">The Three Pillars</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/30 animate-bounce">
+        <i class="fa-solid fa-chevron-down text-xl"></i>
+    </div>
+</section>
+
+<!-- The Three Pillars Section -->
+<section id="pillars" class="py-24 md:py-40 bg-zinc-100 relative">
+    <div class="absolute inset-0 blueprint-grid"></div>
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+            <div class="max-w-2xl">
+                <h2 class="text-zinc-400 text-xs tracking-blueprint uppercase mb-4">The Triquetra Philosophy</h2>
+                <p class="text-4xl md:text-5xl font-display font-light text-zinc-900 leading-tight">Interlocking Disciplines for <span class="font-semibold">Absolute Form.</span></p>
+            </div>
+            <div class="h-[1px] flex-grow bg-zinc-300 mx-12 hidden lg:block"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-zinc-200">
+            <!-- Architecture -->
+            <div class="bg-white p-12 md:p-16 border-b md:border-b-0 md:border-r border-zinc-200 group hover:bg-zinc-950 transition-all duration-700">
+                <div class="text-bronze-600 mb-8 text-4xl group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h3 class="text-2xl font-display font-semibold mb-6 group-hover:text-white">Architecture</h3>
+                <p class="text-zinc-500 group-hover:text-zinc-400 leading-relaxed mb-8">Structural engineering for high-end residential elevations, commercial layouts, and landmark structural designs.</p>
+                <ul class="text-xs tracking-widest text-zinc-400 uppercase space-y-3 group-hover:text-bronze-400">
+                    <li>/ Independent Houses</li>
+                    <li>/ Urban Masterplanning</li>
+                    <li>/ Load-Bearing Innovation</li>
+                </ul>
+            </div>
+
+            <!-- Interiors -->
+            <div class="bg-white p-12 md:p-16 border-b md:border-b-0 md:border-r border-zinc-200 group hover:bg-zinc-950 transition-all duration-700">
+                <div class="text-bronze-600 mb-8 text-4xl group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                </div>
+                <h3 class="text-2xl font-display font-semibold mb-6 group-hover:text-white">Interiors</h3>
+                <p class="text-zinc-500 group-hover:text-zinc-400 leading-relaxed mb-8">Custom modular kitchens, haute-couture material styling, and complex geometric false ceiling engineering.</p>
+                <ul class="text-xs tracking-widest text-zinc-400 uppercase space-y-3 group-hover:text-bronze-400">
+                    <li>/ Geometric Ceilings</li>
+                    <li>/ Material Alchemy</li>
+                    <li>/ Bespoke Millwork</li>
+                </ul>
+            </div>
+
+            <!-- Landscape -->
+            <div class="bg-white p-12 md:p-16 group hover:bg-zinc-950 transition-all duration-700">
+                <div class="text-bronze-600 mb-8 text-4xl group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <h3 class="text-2xl font-display font-semibold mb-6 group-hover:text-white">Landscape</h3>
+                <p class="text-zinc-500 group-hover:text-zinc-400 leading-relaxed mb-8">Blending outdoor organic environments seamlessly with indoor aesthetics through biophilic spatial planning.</p>
+                <ul class="text-xs tracking-widest text-zinc-400 uppercase space-y-3 group-hover:text-bronze-400">
+                    <li>/ Seamless Indoor-Outdoor</li>
+                    <li>/ Terrace Ecosystems</li>
+                    <li>/ Water Geometry</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Signature Portfolio -->
+<section id="portfolio" class="py-24 md:py-40 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col mb-20 text-center items-center">
+            <h2 class="text-zinc-950 text-4xl md:text-5xl font-display font-light mb-6">Signature Portfolio</h2>
+            <div class="w-20 h-1 bg-bronze-600 mb-8"></div>
+            <p class="max-w-xl text-zinc-500 uppercase tracking-widest text-xs">Curated projects defining the peak of modern structural craftsmanship.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[1200px]">
+            <!-- Item 1 -->
+            <div class="md:col-span-8 group relative overflow-hidden bg-zinc-100">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200" 
+                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" alt="Modern Elevation">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                    <div>
+                        <span class="text-bronze-400 text-xs tracking-widest uppercase mb-2 block">Architecture</span>
+                        <h4 class="text-white text-2xl font-display tracking-wide">The Obsidian Villa</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="md:col-span-4 group relative overflow-hidden bg-zinc-100">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" 
+                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" alt="Luxury Interior">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                    <div>
+                        <span class="text-bronze-400 text-xs tracking-widest uppercase mb-2 block">Interiors</span>
+                        <h4 class="text-white text-2xl font-display tracking-wide">Linear Ceiling Suite</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="md:col-span-4 group relative overflow-hidden bg-zinc-100">
+                <img src="https://images.unsplash.com/photo-1556911223-e250e3388f91?auto=format&fit=crop&q=80&w=800" 
+                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" alt="Modular Kitchen">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                    <div>
+                        <span class="text-bronze-400 text-xs tracking-widest uppercase mb-2 block">Interiors</span>
+                        <h4 class="text-white text-2xl font-display tracking-wide">Bronze & Stone Kitchen</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="md:col-span-8 group relative overflow-hidden bg-zinc-100">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" 
+                     class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" alt="Residential Structure">
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                    <div>
+                        <span class="text-bronze-400 text-xs tracking-widest uppercase mb-2 block">Landscape</span>
+                        <h4 class="text-white text-2xl font-display tracking-wide">The Floating Garden</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof -->
+<section class="py-20 bg-zinc-950 text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
+            <div>
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="flex text-bronze-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="text-sm tracking-widest uppercase font-semibold">4.8 Stars. 47 Verified Reviews.</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-display font-light mb-8">Engineered for <br><span class="italic font-semibold">Excellence.</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border-l border-white/10 pl-8 py-4">
+                    <p class="text-zinc-400 italic mb-6 leading-relaxed">"Their approach to structural geometry transformed our commercial layout into a masterpiece of modern flow."</p>
+                    <h5 class="text-xs tracking-widest uppercase font-bold text-bronze-400">— Rajesh Malhotra, CEO</h5>
+                </div>
+                <div class="border-l border-white/10 pl-8 py-4">
+                    <p class="text-zinc-400 italic mb-6 leading-relaxed">"The transition between our interior living space and the landscape is seamless. Absolute precision in delivery."</p>
+                    <h5 class="text-xs tracking-widest uppercase font-bold text-bronze-400">— Sarah D'Souza, Architect</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer / Final CTA -->
+<footer class="bg-zinc-950 pt-24 pb-12 text-white border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col items-center text-center mb-24">
+            <h2 class="text-5xl md:text-7xl font-display font-light mb-12">Ready to engineer <br>your space?</h2>
+            <a href="https://wa.me/91XXXXXXXXXX" class="group relative inline-flex items-center space-x-6 bg-bronze-600 px-12 py-6 overflow-hidden">
+                <span class="relative z-10 text-xs uppercase tracking-[0.3em] font-bold">Start the Conversation</span>
+                <i class="fa-brands fa-whatsapp relative z-10 text-xl"></i>
+                <div class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+                <style> .group:hover span, .group:hover i { color: #09090b; } </style>
+            </a>
+            <p class="mt-12 text-zinc-500 text-sm tracking-widest uppercase">Specializing in General Contracting & Turnkey Execution</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pt-16 border-t border-white/5">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex flex-col group mb-8">
+                    <span class="font-display font-bold text-xl tracking-ultra-wide">TRIQUETRA</span>
+                    <span class="font-display text-[8px] tracking-blueprint text-zinc-500 -mt-1">DESIGNS PRIVATE LIMITED</span>
+                </div>
+                <p class="text-zinc-500 text-sm leading-relaxed">Headquarters: <br>Level 4, Structural Plaza, <br>New Delhi, India.</p>
+            </div>
+            
+            <div>
+                <h6 class="text-xs uppercase tracking-widest font-bold mb-6 text-bronze-500">Practice</h6>
+                <ul class="text-zinc-400 text-sm space-y-4">
+                    <li><a href="#" class="hover:text-white transition-colors">Residential</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Commercial</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Hospitality</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Turnkey Execution</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="text-xs uppercase tracking-widest font-bold mb-6 text-bronze-500">Office</h6>
+                <ul class="text-zinc-400 text-sm space-y-4">
+                    <li><a href="#" class="hover:text-white transition-colors">About Firm</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">The Team</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="text-xs uppercase tracking-widest font-bold mb-6 text-bronze-500">Follow</h6>
+                <div class="flex space-x-6 text-zinc-400">
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-zinc-600 text-[10px] uppercase tracking-widest">© 2024 Triquetra Designs Pvt Ltd. All Rights Reserved.</p>
+            <div class="flex space-x-8 text-zinc-600 text-[10px] uppercase tracking-widest">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth reveal on scroll for elements
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-up');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+  </script>
+</body>
+</html>
